@@ -40,7 +40,7 @@ let randomWord;
 let score = 0;
 
 // Init time
-let time = 10;
+let time = 15;
 
 // Set difficulty to value in ls or medium
 let difficulty =
@@ -116,11 +116,11 @@ text.addEventListener("input", (e) => {
     e.target.value = "";
 
     if (difficulty === "hard") {
-      time += 2;
-    } else if (difficulty === "medium") {
       time += 4;
+    } else if (difficulty === "medium") {
+      time += 8;
     } else {
-      time += 6;
+      time += 10;
     }
 
     updateTime();
